@@ -1,1 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: linear-gradient(118deg, #150629 -0.52%, #000 38.05%, #0E041C 96.2%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+.star
+{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    animation: animate 5s linear infinite;
 
+}
+.star ::before
+{
+    content: 'f005';
+    font-family: fontAwesome;
+    text-shadow: 0 0 5px #fff,
+    0 0 20px #fff,
+    0 0 50px #fff;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+    }
+    100%
+    {
+        transform: translateY(100) rotate(0deg);
+    }
+}
