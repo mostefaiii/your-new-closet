@@ -4,20 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body
 {
     background: linear-gradient(118deg, #150629 -0.52%, #000 38.05%, #0E041C 96.2%);
     min-height: 100vh;
     overflow: hidden;
 }
+
 .star
 {
     position: absolute;
-    top: 0;
+    top: -20px;
     color: #fff;
     animation: animate 5s linear infinite;
 
 }
+
 .star ::before
 {
     content: 'f005';
@@ -26,10 +29,17 @@ body
     0 0 20px #fff,
     0 0 50px #fff;
 }
-@keyframes animate{
+
+@keyframes animate
+{
     0%
     {
         transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    60%
+    {
+        opacity: 1;
     }
     100%
     {
