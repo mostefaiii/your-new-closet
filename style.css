@@ -17,13 +17,14 @@ body
     position: absolute;
     top: -20px;
     color: #fff;
-    animation: animate 5s linear infinite;
-
+    animation: animate 5s linear forwards;
 }
 
 .star ::before
 {
     content: 'f005';
+    width: 20px;
+    height: 20px;
     font-family: fontAwesome;
     text-shadow: 0 0 5px #fff,
     0 0 20px #fff,
