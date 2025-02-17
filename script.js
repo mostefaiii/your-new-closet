@@ -19,3 +19,11 @@ function stars(){
 
 setInterval(function(){stars()},1500)
 
+function openMenu() {
+    var menu = document.getElementById("menu_links");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}

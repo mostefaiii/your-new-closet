@@ -20,13 +20,6 @@
         <nav>
             <div class="menu_logo_container">
                 <div class="menu" onclick="openMenu()">&#9776;</div>
-                <div id="menu_links">
-                    <a href="#">all apparel</a>
-                    <a href="routes/tops/tops.html">tops</a>
-                    <a href="#">bottoms</a>
-                    <a href="#">jewelry</a>
-                    <a href="#">accessorries</a>
-                </div>
                 <div class="logo">your new closet &#9734;</div>
             </div>
             <ul class="nav-links">
@@ -36,6 +29,14 @@
             </ul>
         </nav>
     </header>
+
+    <div id="menu_links">
+        <a href="#">all apparel</a>
+        <a href="routes/tops/tops.html" id="tops_link">tops</a>
+        <a href="#">bottoms</a>
+        <a href="#">jewelry</a>
+        <a href="#">accessories</a>
+    </div>
 
     <section class="gallery">
         <img src="image1.png" alt="Fashion 1">
@@ -49,17 +50,6 @@
     </section>
 
     <script src="script.js"></script>
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("menu_links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
 
 </body>
     
