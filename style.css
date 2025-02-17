@@ -10,6 +10,63 @@ body
     background: linear-gradient(118deg, #150629 -0.52%, #000 38.05%, #0E041C 96.2%);
     min-height: 100vh;
     overflow: hidden;
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+header {
+    display: inline-box;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: black;
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 333.819px;
+    height: 465.14px;
+    flex-shrink: 0;
+    border-radius: 3px;
+}
+
+.slogan {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
 }
 
 .star
@@ -22,10 +79,9 @@ body
 
 .star ::before
 {
-    content: 'f005';
-    width: 20px;
-    height: 20px;
-    font-family: fontAwesome;
+    content: '&#9734;';
+    width: 40px;
+    height: 40px;
     text-shadow: 0 0 5px #fff,
     0 0 20px #fff,
     0 0 50px #fff;
