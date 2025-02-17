@@ -12,12 +12,13 @@
 #menu_links 
 {
     display: none; /* hidden by default */
-    position: relative;
-    top: 0;
+    position: fixed;
+    top: 70px;
     left: 0;
     width: 250px;
     height: fit-content;
     background: black;
+    outline: 4px white;
     flex-direction: column;
     padding: 20px;
     z-index: 1000;
@@ -26,17 +27,23 @@
 #menu_links a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     display: block;
     padding: 15px 0;
 }
 
-#menu_links a #top_links:hover {
-    text-decoration: underline;
+#tops_link {
+    color: white; /* Default color */
+    font-weight: bold;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
-
+#tops_link:hover {
+    color: black; /* Change text color on hover */
+    background: rgba(255, 255, 255, 0.784); /* Optional: light background */
+    text-decoration: underline;
+}
 *
 {
     margin: 0;
@@ -93,11 +100,25 @@ nav {
 .nav-links li {
     display: inline-block;
     margin: 0px 20px;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.nav-links a:hover{
+    color: black; /* Change text color on hover */
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.784); /* Optional: light background */
+
+}
+
+.nav-links li:hover
+{
 }
 
 .gallery {
