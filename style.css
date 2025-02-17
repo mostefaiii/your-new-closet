@@ -1,3 +1,6 @@
+
+
+
 .stars-container {
     position: fixed;
     top: 0;
@@ -64,7 +67,7 @@ body
 {
     background: linear-gradient(118deg, #150629 -0.52%, #000 38.05%, #0E041C 96.2%);
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     font-family: "Oranienbaum", serif;
     font-weight: 400;
     font-style: normal;
