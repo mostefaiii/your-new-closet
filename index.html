@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
-    <title>your perfect closet <3</title>
+    <title>your perfect closet \<3 </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,26 @@
 </head>    
 
 <body>
+    <!-- necessary for the falling stars -->
+    <div class="stars-container"></div>
 
     <header>
         <nav>
-            <div class="menu">&#9776;</div>
-            <div class="logo">your new closet &#9734;</div>
+            <div class="menu_logo_container">
+                <div class="menu" onclick="openMenu()">&#9776;</div>
+                <div id="menu_links">
+                    <a href="#">all apparel</a>
+                    <a href="routes/tops/tops.html">tops</a>
+                    <a href="#">bottoms</a>
+                    <a href="#">jewelry</a>
+                    <a href="#">accessorries</a>
+                </div>
+                <div class="logo">your new closet &#9734;</div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#">search</a></li>
                 <li><a href="#">cart</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="routes/contact/contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,30 +47,20 @@
     <section class="slogan">
         <p>alternative clothing for pinterest <br> &#9734; board obsessed individuals &#9734;</p>
     </section>
-    
+
+    <script src="script.js"></script>
 
     <script>
-        function stars(){
-            let e = document.createElement('div');
-            e.setAttribute('class','star');
-            document.body.appendChild(e);
-            e.style.left = Math.random() * + innerWidth + 'px';
-
-            let size = Math.random() * 12;
-            let duration = Math.random() * 3;
-
-            e.style.fontSize = 12 + size + 'px';
-            e.style.animationDuration = 2 + duration  + 's';
-
-            setTimeout(function(){
-                document.body.removeChild(e);
-            }, 5000)
+        function myFunction() {
+          var x = document.getElementById("menu_links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
         }
+        </script>
 
-        setInterval(function(){
-            stars()
-        },1000)
-    </script>
 </body>
     
 </html>
